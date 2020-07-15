@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="categories"></div>
+    <div id="products"></div>
+    <div id="product_info"></div>
+</div>
+
+<form action="https://fom.in.ua/echo" method="POST" name="myform">
+
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" id="name" placeholder="Name" value='Nika' required><br>
+    <label for="surname">Enter your surname:</label>
+    <input type="text" name="surname" id="surname" placeholder="Surname" value = 'Pupenko' required><br>
+    <label>Choose your city:</label>
+    <select name="city" id="city" size="1">
+        <option value="Odessa">Odessa</option>
+        <option value="Kiev">Kiev</option>
+    </select><br>
+    <label>Choose post number:</label>
+    <select name="post" id="post" size="1">
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+    </select><br>
+    <label for="number">Enter number of products:</label>
+    <input type="number" name="number" id="number" min='1' value='1'required><br>
+    <label for="comment">Enter your comment:</label><br>
+    <textarea cols="50" rows="5" name="comment" id="comment" placeholder="Comment" required></textarea><br>
+    <button type="reset">RESET</button>
+    <button id="save-button">SAVE</button>
+</form>
+
+
+<script src="js/data.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
